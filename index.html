@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skb.</title>
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https:/resources/demos/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="container header">
+      <a class="header__logo" href="#">
+        <picture>
+          <source media="(max-width: 480px)" srcset="img/logo.svg" width="24px" height="24px">
+          <img class="header__img" src="img/logo.svg" alt="Skb логотип">
+        </picture>
+      </a>
+      <input class="header__input" type="text" placeholder="Введите запрос">
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="clients">
+        <h1 class="clients__heading">
+          Клиенты
+        </h1>
+        <div class="row clients__table table">
+          <div class="row align-items-end table__head table-head">
+            <div class="col table-head__col table-head-id">
+              <p class="table-head__paragraph" id="sort-id">
+                ID
+              </p>
+            </div>
+            <div class="col table-head__col table-head-name">
+              <p class="table-head__paragraph" id="sort-name">
+                Фамилия Имя Отчество
+              </p>
+            </div>
+            <div class="col table-head__col table-head-create">
+              <p class="table-head__paragraph" id="sort-create">
+                Дата и время создания
+              </p>
+            </div>
+            <div class="col table-head__col table-head-changes">
+              <p class="table-head__paragraph" id="sort-changes">
+                Последние изменения
+              </p>
+            </div>
+            <div class="col table-head__col table-head-contacts">
+              <p class="table-head__paragraph" id="sort-contacts">
+                Контакты
+              </p>
+            </div>
+            <div class="col table-head__col table-head-actions">
+              <p class="table-head__paragraph" id="sort-actions">
+                Действия
+              </p>
+            </div>
+          </div>
+          <div class="table__body table-body">
+            <div class="table-body__loading">
+              <div class="table-body__loading-icon">
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="clients__no-coincidence hidden">
+          Совпадений не найдено...
+        </h2>
+      </div>
+      <button class="clients__button">
+        <svg class="button-svg" width="23" height="16" viewbox="0 0 23 16" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M14.5 8C16.71 8 18.5 6.21 18.5 4C18.5 1.79 16.71 0 14.5 0C12.29 0 10.5 1.79 10.5 4C10.5 6.21 12.29 8 14.5 8ZM5.5 6V3H3.5V6H0.5V8H3.5V11H5.5V8H8.5V6H5.5ZM14.5 10C11.83 10 6.5 11.34 6.5 14V16H22.5V14C22.5 11.34 17.17 10 14.5 10Z"
+            fill="#9873FF" />
+        </svg>
+        Добавить клиента
+      </button>
+    </div>
+  </main>
+
+  <script src="js/inputmask.min.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/new-client.js"></script>
+</body>
+
+</html>
